@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO principal -->
+<title>Casa Amatista · Centro de Salud Integrativa y Holística en Paraná</title>
+<meta name="description" content="Casa Amatista es un espacio de salud integrativa y holística en Paraná, Entre Ríos. Terapias, yoga, meditación, tai chi y alquiler de consultorios y salones. Cuerpo · Mente · Alma.">
+<meta name="author" content="Casa Amatista">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://casaamatista.com.ar/">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Casa Amatista">
+<meta property="og:title" content="Casa Amatista · Salud Integrativa y Holística en Paraná">
+<meta property="og:description" content="Un espacio para reconectar cuerpo, mente y alma. Terapias, prácticas y salones en Parque Urquiza, Paraná.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://casaamatista.com.ar/">
+<meta property="og:image" content="https://casaamatista.com.ar/assets/salon-yoga.jpg">
+<meta property="og:locale" content="es_AR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Casa Amatista · Salud Integrativa y Holística en Paraná">
+<meta name="twitter:description" content="Un espacio para reconectar cuerpo, mente y alma. Paraná, Entre Ríos.">
+<meta name="twitter:image" content="https://casaamatista.com.ar/assets/salon-yoga.jpg">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<!-- Datos estructurados -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+  "name": "Casa Amatista",
+  "description": "Centro de salud integrativa y holística: terapias, prácticas (yoga, meditación, tai chi) y alquiler de consultorios y salones en Paraná, Entre Ríos.",
+  "url": "https://casaamatista.com.ar/",
+  "logo": "https://casaamatista.com.ar/assets/logo-violeta.png",
+  "image": "https://casaamatista.com.ar/assets/salon-yoga.jpg",
+  "slogan": "Cuerpo · Mente · Alma",
+  "telephone": "+5493434732062",
+  "email": "casaamatistaparana@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "De La Torre y Vera 1064, Parque Urquiza",
+    "addressLocality": "Paraná",
+    "addressRegion": "Entre Ríos",
+    "addressCountry": "AR"
+  },
+  "areaServed": "Paraná, Entre Ríos, Argentina",
+  "sameAs": [
+    "https://www.instagram.com/casaamatista.parana",
+    "https://www.facebook.com/casaamatista.parana",
+    "https://www.threads.net/@casaamatista.parana"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Casa Amatista · Inicio">
+      <img src="assets/logo-violeta.png" alt="Casa Amatista">
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <a href="#terapias" class="nav-link">Terapias</a>
+      <a href="#practicas" class="nav-link">Prácticas</a>
+      <a href="#espacio" class="nav-link">El espacio</a>
+      <a href="#alquiler" class="nav-link">Alquiler</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <button type="button" class="nav-cta js-open-contact" data-reason="reserva">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Reservar
+      </button>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"><img src="assets/salon-yoga.jpg" alt="Sala de prácticas de Casa Amatista con esteras de yoga en tonos amatista"></div>
+  <div class="hero-overlay"></div>
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <img class="hero-logo" src="assets/logo-crema.png" alt="Casa Amatista">
+    <div class="hero-tagline"><span>Cuerpo</span><i class="dot"></i><span>Mente</span><i class="dot"></i><span>Alma</span></div>
+    <p class="hero-sub">Un centro de salud integrativa y holística en el corazón del Parque Urquiza, para volver a habitarte con calma.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-wa" href="https://wa.me/5493434732062?text=Hola%20Casa%20Amatista!%20Quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+        Reservar por WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="#terapias">Conocer el espacio</a>
+    </div>
+  </div>
+  <a href="#filosofia" class="hero-scroll" aria-label="Desplazarse">Bajá<span class="arrow"></span></a>
+</section>
+
+<!-- ========== FILOSOFÍA ========== -->
+<section class="section filosofia" id="filosofia">
+  <div class="container">
+    <div class="head center reveal">
+      <p class="eyebrow">Nuestra esencia</p>
+      <h2 class="title">Un lugar para volver a vos</h2>
+      <p class="lead-serif">La amatista acompaña el equilibrio y la serenidad. Con ese espíritu creamos Casa Amatista: un espacio donde distintas disciplinas se encuentran para cuidar a la persona de forma integra.</p>
+      <div class="divider-rombo" style="margin-top:22px"><span></span></div>
+    </div>
+    <div class="ejes">
+      <button type="button" class="eje reveal" data-vmp="cuerpo">
+        <div class="eje-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg></div>
+        <span class="eje-badge">Nuestra Misión</span>
+        <h3>Cuerpo</h3>
+        <p>El cuerpo pone en marcha, día a día, lo que nos propusimos: cuidar y sostener el bienestar físico de cada persona.</p>
+        <div class="eje-line"></div>
+      </button>
+      <button type="button" class="eje reveal" data-vmp="mente">
+        <div class="eje-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"/></svg></div>
+        <span class="eje-badge">Nuestra Visión</span>
+        <h3>Mente</h3>
+        <p>La mente traza el rumbo: la claridad para imaginar un bienestar posible y sostenerlo en el tiempo.</p>
+        <div class="eje-line"></div>
+      </button>
+      <button type="button" class="eje reveal" data-vmp="alma">
+        <div class="eje-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+        <span class="eje-badge">Nuestro Propósito</span>
+        <h3>Alma</h3>
+        <p>El alma conecta con el sentido profundo: el porqué que le da forma a cada camino personal.</p>
+        <div class="eje-line"></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TERAPIAS ========== -->
+<section class="section section-tint" id="terapias">
+  <div class="container">
+    <div class="head center reveal">
+      <p class="eyebrow">Acompañamiento profesional</p>
+      <h2 class="title">Nuestras terapias</h2>
+      <p class="lead">Un equipo de profesionales de distintas disciplinas, reunido en un mismo espacio para acompañarte según tu momento y tu necesidad.</p>
+    </div>
+    <div class="terapias-grid reveal">
+      <button type="button" class="terapia" data-terapia="psicologia">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13,8.57c-0.79,0-1.43,0.64-1.43,1.43s0.64,1.43,1.43,1.43s1.43-0.64,1.43-1.43S13.79,8.57,13,8.57z"/><path d="M13,3C9.25,3,6.2,5.94,6.02,9.64L4.1,12.2C3.85,12.53,4.09,13,4.5,13H6v3c0,1.1,0.9,2,2,2h1v3h7v-4.68c2.36-1.12,4-3.53,4-6.32C20,6.13,16.87,3,13,3z M16,10c0,0.13-0.01,0.26-0.02,0.39l0.83,0.66c0.08,0.06,0.1,0.16,0.05,0.25l-0.8,1.39c-0.05,0.09-0.16,0.12-0.24,0.09l-0.99-0.4c-0.21,0.16-0.43,0.29-0.67,0.39L14,13.83c-0.01,0.1-0.1,0.17-0.2,0.17h-1.6c-0.1,0-0.18-0.07-0.2-0.17l-0.15-1.06c-0.25-0.1-0.47-0.23-0.68-0.39l-0.99,0.4c-0.09,0.03-0.2,0-0.25-0.09l-0.8-1.39c-0.05-0.08-0.03-0.19,0.05-0.25l0.84-0.66C10.01,10.26,10,10.13,10,10c0-0.13,0.02-0.27,0.04-0.39L9.19,8.95c-0.08-0.06-0.1-0.16-0.05-0.26l0.8-1.38c0.05-0.09,0.15-0.12,0.24-0.09l1,0.4c0.2-0.15,0.43-0.29,0.67-0.39l0.15-1.06C12.02,6.07,12.1,6,12.2,6h1.6c0.1,0,0.18,0.07,0.2,0.17l0.15,1.06c0.24,0.1,0.46,0.23,0.67,0.39l1-0.4c0.09-0.03,0.2,0,0.24,0.09l0.8,1.38c0.05,0.09,0.03,0.2-0.05,0.26l-0.85,0.66C15.99,9.73,16,9.86,16,10z"/></svg></div>
+        <div class="terapia-top"><h3>Psicología</h3></div>
+        <p>Espacio terapéutico para atravesar lo que duele, comprenderte y crecer.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="psicopedagogia">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg></div>
+        <div class="terapia-top"><h3>Psicopedagogía</h3></div>
+        <p>Acompañamiento en los procesos de aprendizaje de niños, jóvenes y adultos.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="fonoaudiologia">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="9" cy="9" r="4"/><path d="M9 15c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm7.76-9.64l-1.68 1.69c.84 1.18.84 2.71 0 3.89l1.68 1.69c2.02-2.02 2.02-5.07 0-7.27zM20.07 2l-1.63 1.63c2.77 3.02 2.77 7.56 0 10.74L20.07 16c3.9-3.89 3.91-9.95 0-14z"/></svg></div>
+        <div class="terapia-top"><h3>Fonoaudiología</h3></div>
+        <p>Abordaje de la voz, el lenguaje y la comunicación en todas las edades.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="kinesiologia">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/></svg></div>
+        <div class="terapia-top"><h3>Kinesiología</h3></div>
+        <p>Recuperación del movimiento, alivio del dolor y cuidado del cuerpo.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="reflexologia">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.73 12.02l3.98-3.98c.39-.39.39-1.02 0-1.41l-4.34-4.34c-.39-.39-1.02-.39-1.41 0l-3.98 3.98L8 2.29C7.8 2.1 7.55 2 7.29 2c-.25 0-.51.1-.7.29L2.25 6.63c-.39.39-.39 1.02 0 1.41l3.98 3.98L2.25 16c-.39.39-.39 1.02 0 1.41l4.34 4.34c.39.39 1.02.39 1.41 0l3.98-3.98 3.98 3.98c.2.2.45.29.71.29.26 0 .51-.1.71-.29l4.34-4.34c.39-.39.39-1.02 0-1.41l-3.99-3.98zM12 9c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-4.71 1.96L3.66 7.34l3.63-3.63 3.62 3.62-3.62 3.63zM10 13c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm2 2c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm2-4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2.66 9.34l-3.63-3.62 3.63-3.63 3.62 3.62-3.62 3.63z"/></svg></div>
+        <div class="terapia-top"><h3>Reflexología</h3></div>
+        <p>Estímulo de puntos reflejos para armonizar y relajar todo el organismo.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="coaching">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z"/></svg></div>
+        <div class="terapia-top"><h3>Coaching Ontológico</h3></div>
+        <p>Un camino de preguntas para ampliar tu mirada y pasar a la acción.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="mindfulness">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="6" r="2"/><path d="M21,16v-2c-2.24,0-4.16-0.96-5.6-2.68l-1.34-1.6C13.68,9.26,13.12,9,12.53,9h-1.05c-0.59,0-1.15,0.26-1.53,0.72l-1.34,1.6C7.16,13.04,5.24,14,3,14v2c2.77,0,5.19-1.17,7-3.25V15l-3.88,1.55C5.45,16.82,5,17.48,5,18.21C5,19.2,5.8,20,6.79,20H9v-0.5c0-1.38,1.12-2.5,2.5-2.5h3c0.28,0,0.5,0.22,0.5,0.5S14.78,18,14.5,18h-3c-0.83,0-1.5,0.67-1.5,1.5V20h7.21C18.2,20,19,19.2,19,18.21c0-0.73-0.45-1.39-1.12-1.66L14,15v-2.25C15.81,14.83,18.23,16,21,16z"/></svg></div>
+        <div class="terapia-top"><h3>Mindfulness</h3></div>
+        <p>Atención plena para habitar el presente y sostener la calma en lo cotidiano.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="constelaciones">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.4,18.2C8.78,18.7,9,19.32,9,20c0,1.66-1.34,3-3,3s-3-1.34-3-3s1.34-3,3-3c0.44,0,0.85,0.09,1.23,0.26l1.41-1.77c-0.92-1.03-1.29-2.39-1.09-3.69l-2.03-0.68C4.98,11.95,4.06,12.5,3,12.5c-1.66,0-3-1.34-3-3s1.34-3,3-3s3,1.34,3,3c0,0.07,0,0.14-0.01,0.21l2.03,0.68c0.64-1.21,1.82-2.09,3.22-2.32l0-2.16C9.96,5.57,9,4.4,9,3c0-1.66,1.34-3,3-3s3,1.34,3,3c0,1.4-0.96,2.57-2.25,2.91v2.16c1.4,0.23,2.58,1.11,3.22,2.32l2.03-0.68C18,9.64,18,9.57,18,9.5c0-1.66,1.34-3,3-3s3,1.34,3,3s-1.34,3-3,3c-1.06,0-1.98-0.55-2.52-1.37l-2.03,0.68c0.2,1.29-0.16,2.65-1.09,3.69l1.41,1.77C17.15,17.09,17.56,17,18,17c1.66,0,3,1.34,3,3s-1.34,3-3,3s-3-1.34-3-3c0-0.68,0.22-1.3,0.6-1.8l-1.41-1.77c-1.35,0.75-3.01,0.76-4.37,0L8.4,18.2z"/></svg></div>
+        <div class="terapia-top"><h3>Constelaciones Familiares</h3><span class="modo">Individual · Grupal</span></div>
+        <p>Miradas sistémicas para ordenar vínculos y sanar historias familiares.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="tarot">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+        <div class="terapia-top"><h3>Tarot Perceptivo</h3></div>
+        <p>Una lectura como herramienta de introspección y toma de conciencia.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="bioexistencia">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.05,8.05c-2.73,2.73-2.73,7.15-0.02,9.88c1.47-3.4,4.09-6.24,7.36-7.93c-2.77,2.34-4.71,5.61-5.39,9.32c2.6,1.23,5.8,0.78,7.95-1.37C19.43,14.47,20,4,20,4S9.53,4.57,6.05,8.05z"/></svg></div>
+        <div class="terapia-top"><h3>Bioexistencia Consciente</h3></div>
+        <p>Trabajo corporal y emocional para reconectar con tu propia vitalidad.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="reiki">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.55 12c-1.07-.71-2.25-1.27-3.53-1.61 1.28.34 2.46.9 3.53 1.61zm10.43-1.61c-1.29.34-2.49.91-3.57 1.64 1.08-.73 2.28-1.3 3.57-1.64z"/><path d="M15.49 9.63c-.18-2.79-1.31-5.51-3.43-7.63-2.14 2.14-3.32 4.86-3.55 7.63 1.28.68 2.46 1.56 3.49 2.63 1.03-1.06 2.21-1.94 3.49-2.63zm-6.5 2.65c-.14-.1-.3-.19-.45-.29.15.11.31.19.45.29zm6.42-.25c-.13.09-.27.16-.4.26.13-.1.27-.17.4-.26zM12 15.45C9.85 12.17 6.18 10 2 10c0 5.32 3.36 9.82 8.03 11.49.63.23 1.29.4 1.97.51.68-.12 1.33-.29 1.97-.51C18.64 19.82 22 15.32 22 10c-4.18 0-7.85 2.17-10 5.45z"/></svg></div>
+        <div class="terapia-top"><h3>Reiki</h3></div>
+        <p>Armonización energética para descansar, equilibrar y renovar.</p>
+      </button>
+      <button type="button" class="terapia" data-terapia="masajes">
+        <div class="terapia-icon"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="7" cy="6" r="2"/><path d="M11.15 12c-.31-.22-.59-.46-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5-.29-.14-.62-.23-.96-.23h-.03C6.01 9 5 10.01 5 11.25V12H2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8H11.15zM7 20H5v-6h2v6zm4 0H9v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6zm-.35-14.14l-.07-.07c-.57-.62-.82-1.41-.67-2.2L18 3h-1.89l-.06.43c-.2 1.36.27 2.71 1.3 3.72l.07.06c.57.62.82 1.41.67 2.2l-.11.59h1.91l.06-.43c.21-1.36-.27-2.71-1.3-3.71zm-4 0l-.07-.07c-.57-.62-.82-1.41-.67-2.2L14 3h-1.89l-.06.43c-.2 1.36.27 2.71 1.3 3.72l.07.06c.57.62.82 1.41.67 2.2l-.11.59h1.91l.06-.43c.21-1.36-.27-2.71-1.3-3.71z"/></svg></div>
+        <div class="terapia-top"><h3>Masajes</h3></div>
+        <p>Distintas técnicas para soltar tensiones y reencontrar el bienestar.</p>
+      </button>
+    </div>
+    <p class="terapias-note">¿No sabés cuál elegir? <strong>Escribinos</strong> y te ayudamos a encontrar la terapia y el profesional indicados para vos.</p>
+    <div class="center" style="margin-top:26px">
+      <button type="button" class="btn btn-outline js-open-contact" data-reason="terapia">Quiero que me orienten</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PRÁCTICAS ========== -->
+<section class="section practicas" id="practicas">
+  <div class="container">
+    <div class="head center reveal">
+      <p class="eyebrow">Clases y encuentros</p>
+      <h2 class="title">Prácticas para el bienestar</h2>
+      <p class="lead">Grupos reducidos y un ambiente cálido para moverte, respirar y encontrarte con otras personas en el mismo camino.</p>
+    </div>
+    <div class="practicas-grid reveal">
+      <article class="practica">
+        <img src="assets/salon-yoga-2.jpg" alt="Sala de yoga de Casa Amatista">
+        <span class="practica-tag">Cuerpo · Mente</span>
+        <div class="practica-body">
+          <h3>Yoga</h3>
+          <p>Posturas, respiración y quietud para fortalecer el cuerpo y aquietar la mente.</p>
+        </div>
+      </article>
+      <article class="practica">
+        <img src="assets/buda.jpg" alt="Rincón de meditación con figura de Buda">
+        <span class="practica-tag">Mente · Alma</span>
+        <div class="practica-body">
+          <h3>Meditación &amp; Mindfulness</h3>
+          <p>Encuentros guiados para cultivar la atención plena y volver al presente.</p>
+        </div>
+      </article>
+      <article class="practica">
+        <img src="assets/patio-zen-2.jpg" alt="Patio Zen de Casa Amatista">
+        <span class="practica-tag">Cuerpo · Energía</span>
+        <div class="practica-body">
+          <h3>Tai Chi Chuan</h3>
+          <p>Movimiento lento y fluido que integra equilibrio, energía y serenidad.</p>
+        </div>
+      </article>
+      <article class="practica">
+        <img src="assets/salon-yoga.jpg" alt="Salón amplio de Casa Amatista para prácticas">
+        <span class="practica-tag">Cuidado</span>
+        <div class="practica-body">
+          <h3>Gimnasia para embarazadas</h3>
+          <p>Movimiento suave y consciente para acompañar el embarazo con bienestar.</p>
+        </div>
+      </article>
+    </div>
+    <div class="center" style="margin-top:40px">
+      <button type="button" class="btn btn-outline js-open-contact" data-reason="practica">Consultar horarios y cupos</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EL ESPACIO ========== -->
+<section class="section section-dark espacio" id="espacio">
+  <div class="container">
+    <div class="espacio-intro">
+      <div class="reveal">
+        <p class="eyebrow">El espacio</p>
+        <h2 class="title">Una casa pensada para el encuentro</h2>
+        <p class="lead">Paredes de ladrillo, luz natural, plantas y rincones de meditación. Cada ambiente de Casa Amatista fue cuidado para que profesionales y visitantes se sientan en calma desde que llegan. En el fondo, un Patio Zen invita a la pausa.</p>
+        <div class="hero-ctas" style="margin-top:32px">
+          <a href="https://wa.me/5493434732062?text=Hola!%20Quisiera%20conocer%20Casa%20Amatista." target="_blank" rel="noopener" class="btn btn-ghost">Agendá una visita</a>
+        </div>
+      </div>
+      <figure class="espacio-feature reveal">
+        <img src="assets/diosa.jpg" alt="Rincón espiritual con figura en actitud de oración y velas">
+        <figcaption>Rincones para respirar, dentro de la casa.</figcaption>
+      </figure>
+    </div>
+    <div class="gallery reveal">
+      <figure class="wide">
+        <img src="assets/hall-buda.jpg" alt="Hall de entrada de Casa Amatista con escalera y consola con figura de Buda">
+        <figcaption>Hall de entrada</figcaption>
+      </figure>
+      <figure class="tall">
+        <img src="assets/patio-zen-1.jpg" alt="Patio Zen con palmera y camino de piedras">
+        <figcaption>Patio Zen</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/consultorio-a1.jpg" alt="Consultorio de Casa Amatista">
+        <figcaption>Consultorio</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/consultorio-b1.jpg" alt="Oficina de Casa Amatista">
+        <figcaption>Oficina profesional</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/rincon-infantil.jpg" alt="Rincón infantil de Casa Amatista con teatro de marionetas y mesa de juegos">
+        <figcaption>Rincón infantil</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/consultorio-juegos.jpg" alt="Consultorio equipado con juegos didácticos para psicopedagogía">
+        <figcaption>Espacio de aprendizaje</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ALQUILER ========== -->
+<section class="section section-tint alquiler" id="alquiler">
+  <div class="container">
+    <div class="head center reveal">
+      <p class="eyebrow">Para profesionales</p>
+      <h2 class="title">Alquilá tu espacio</h2>
+      <p class="lead">Consultorios y salones equipados, en una ubicación privilegiada del Parque Urquiza, para que desarrolles tu práctica en un ambiente preparado para el bienestar.</p>
+    </div>
+    <div class="alquiler-grid reveal">
+      <article class="oferta">
+        <div class="oferta-photo">
+          <img src="assets/consultorio-a2.jpg" alt="Consultorio para alquilar en Casa Amatista">
+          <span>Consultorios &amp; Oficinas</span>
+        </div>
+        <div class="oferta-body">
+          <h3>Consultorios por módulos</h3>
+          <p>Dos consultorios y oficinas ideales para terapeutas, psicólogos y profesionales de la salud.</p>
+          <ul class="oferta-list">
+            <li>Ambientes cálidos, luminosos y climatizados</li>
+            <li>Mobiliario listo para atender y sala de espera</li>
+            <li>Espacio para atención individual y de niñez</li>
+          </ul>
+          <div class="oferta-foot">
+            <p class="oferta-modo">Alquiler por <strong>módulos de 5 hs</strong></p>
+            <button type="button" class="btn btn-outline btn-sm js-open-contact" data-reason="alquiler">Consultar</button>
+          </div>
+        </div>
+      </article>
+      <article class="oferta">
+        <div class="oferta-photo">
+          <img src="assets/salon-yoga-2.jpg" alt="Salón para clases y talleres en Casa Amatista">
+          <span>Salones</span>
+        </div>
+        <div class="oferta-body">
+          <h3>Salones para clases y talleres</h3>
+          <p>Dos salones —uno grande y uno más íntimo— para clases, talleres y formaciones.</p>
+          <ul class="oferta-list">
+            <li>Ideales para yoga, meditación, mindfulness y tai chi</li>
+            <li>Aptos para talleres, capacitaciones y encuentros grupales</li>
+            <li>Ambientación serena y elementos de práctica disponibles</li>
+          </ul>
+          <div class="oferta-foot">
+            <p class="oferta-modo">Grande e íntimo · <strong>según tu propuesta</strong></p>
+            <button type="button" class="btn btn-outline btn-sm js-open-contact" data-reason="alquiler">Consultar</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACTO ========== -->
+<section class="section contacto" id="contacto">
+  <div class="container">
+    <div class="head center reveal">
+      <p class="eyebrow">Estamos cerca</p>
+      <h2 class="title">Vení a conocernos</h2>
+      <p class="lead">Escribinos por WhatsApp o acercate. Con gusto respondemos tus consultas y coordinamos tu turno o visita.</p>
+    </div>
+    <div class="contacto-grid reveal">
+      <div class="contacto-info">
+        <div class="contacto-list">
+          <div class="ci-item">
+            <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div>
+              <h4>Dirección</h4>
+              <p>De La Torre y Vera 1064<br>Parque Urquiza · Paraná, Entre Ríos</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm5.5 12.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.1-.3.2-.5v-.5c0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></span>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/5493434732062?text=Hola%20Casa%20Amatista!%20Quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener">+54 9 343 473 2062</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:casaamatistaparana@gmail.com">casaamatistaparana@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-ctas" style="justify-content:flex-start; margin-bottom:28px">
+          <a class="btn btn-wa" href="https://wa.me/5493434732062?text=Hola%20Casa%20Amatista!%20Quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <button type="button" class="btn btn-outline js-open-contact" data-reason="general">Enviar un mensaje</button>
+        </div>
+        <div class="contacto-social" aria-label="Redes de Casa Amatista">
+          <a href="https://www.instagram.com/casaamatista.parana" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.7 3.7 0 0 1-.9 1.38 3.7 3.7 0 0 1-1.38.9c-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.12-1.38 5.9 5.9 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.12A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/casaamatista.parana" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+          </a>
+          <a href="https://www.threads.net/@casaamatista.parana" target="_blank" rel="noopener" aria-label="Threads">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.3 11.1c-.1 0-.2-.1-.3-.1-.2-3.2-1.9-5-4.8-5-1.7 0-3.2.8-4 2.1l1.6 1.1c.6-1 1.5-1.2 2.4-1.2 1.6 0 2.5.9 2.7 2.6-.6-.1-1.2-.2-1.9-.2-2.6 0-4.3 1.4-4.2 3.4.1 1.9 1.6 2.9 3.3 2.9 1.6 0 3.2-.8 3.7-2.9.3.8 1.1 1.7 1.6 2.1l1.3-1.4c-.7-.5-1.2-1.4-1.4-2.4.2-.9.3-1.9.3-2.9.4.1.9.3 1.3.6l.4-1.9c-.5-.3-1-.4-1.5-.4zm-4.5 5.3c-.9 0-1.5-.4-1.5-1.1 0-.8.9-1.3 2.2-1.3.5 0 1 .1 1.5.2-.2 1.5-1.1 2.2-2.2 2.2z"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contacto-map">
+        <iframe title="Ubicación de Casa Amatista en Paraná" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=De%20La%20Torre%20y%20Vera%201064%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="section section-tint faq" id="faq">
+  <div class="container">
+    <div class="head center reveal">
+      <p class="eyebrow">Antes de venir</p>
+      <h2 class="title">Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>¿Cómo saco un turno?</summary>
+        <p>La forma más rápida es por <a href="https://wa.me/5493434732062" target="_blank" rel="noopener">WhatsApp</a>. Contanos qué terapia o práctica te interesa y coordinamos día y horario con el profesional. También podés escribirnos desde el formulario de contacto.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Necesito experiencia previa para las prácticas de yoga o meditación?</summary>
+        <p>Para nada. Nuestras clases están abiertas a todos los niveles y trabajamos en grupos reducidos para acompañarte a tu ritmo. Solo vení con ropa cómoda y ganas de estar presente.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Las terapias reemplazan un tratamiento médico?</summary>
+        <p>No. Las terapias y prácticas de Casa Amatista son complementarias y están orientadas al bienestar integral. No sustituyen el diagnóstico, tratamiento o indicación de profesionales de la salud. Ante cualquier condición médica, consultá siempre con tu profesional de confianza.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Soy profesional, ¿cómo alquilo un consultorio o salón?</summary>
+        <p>Los consultorios y oficinas se alquilan por módulos de 5 horas, y los salones según tu propuesta de clase, taller o formación. Escribinos y coordinamos una visita para que conozcas el espacio y veamos la disponibilidad.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Dónde están y cómo llego?</summary>
+        <p>Estamos en De La Torre y Vera 1064, en pleno Parque Urquiza, Paraná (Entre Ríos). Podés ubicarnos en el mapa de esta página. La zona es tranquila y de fácil acceso.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA FINAL ========== -->
+<section class="section section-dark cta-final">
+  <div class="container">
+    <div class="cta-iso reveal"><img src="assets/isotipo-crema.png" alt=""></div>
+    <h2 class="reveal">Date este tiempo</h2>
+    <p class="reveal">Cuidarte también es una decisión. Estamos para acompañarte en tu camino hacia el equilibrio.</p>
+    <div class="hero-ctas reveal">
+      <a class="btn btn-wa" href="https://wa.me/5493434732062?text=Hola%20Casa%20Amatista!%20Quisiera%20reservar%20un%20turno." target="_blank" rel="noopener">Reservar por WhatsApp</a>
+      <button type="button" class="btn btn-ghost js-open-contact" data-reason="general">Escribinos</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="assets/logo-crema.png" alt="Casa Amatista" class="footer-logo">
+        <p class="footer-tagline">Cuerpo · Mente · Alma</p>
+        <p class="footer-mission">Centro de salud integrativa y holística en Paraná. Un espacio para reconectar con vos, cuidado en cada detalle.</p>
+        <div class="footer-social" aria-label="Redes de Casa Amatista">
+          <a href="https://www.instagram.com/casaamatista.parana" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.7 3.7 0 0 1-.9 1.38 3.7 3.7 0 0 1-1.38.9c-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.12-1.38 5.9 5.9 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.12A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+          <a href="https://www.facebook.com/casaamatista.parana" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.threads.net/@casaamatista.parana" target="_blank" rel="noopener" aria-label="Threads"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.3 11.1c-.1 0-.2-.1-.3-.1-.2-3.2-1.9-5-4.8-5-1.7 0-3.2.8-4 2.1l1.6 1.1c.6-1 1.5-1.2 2.4-1.2 1.6 0 2.5.9 2.7 2.6-.6-.1-1.2-.2-1.9-.2-2.6 0-4.3 1.4-4.2 3.4.1 1.9 1.6 2.9 3.3 2.9 1.6 0 3.2-.8 3.7-2.9.3.8 1.1 1.7 1.6 2.1l1.3-1.4c-.7-.5-1.2-1.4-1.4-2.4.2-.9.3-1.9.3-2.9.4.1.9.3 1.3.6l.4-1.9c-.5-.3-1-.4-1.5-.4zm-4.5 5.3c-.9 0-1.5-.4-1.5-1.1 0-.8.9-1.3 2.2-1.3.5 0 1 .1 1.5.2-.2 1.5-1.1 2.2-2.2 2.2z"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="#terapias">Terapias</a></li>
+          <li><a href="#practicas">Prácticas</a></li>
+          <li><a href="#espacio">El espacio</a></li>
+          <li><a href="#alquiler">Alquiler</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/5493434732062" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:casaamatistaparana@gmail.com">Email</a></li>
+          <li><a href="#contacto">Cómo llegar</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legales</h4>
+        <ul>
+          <li><a href="paginas/aviso-legal.html">Aviso Legal</a></li>
+          <li><a href="paginas/privacidad.html">Privacidad</a></li>
+          <li><a href="paginas/cookies.html">Cookies</a></li>
+          <li><a href="paginas/terminos.html">Términos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Casa Amatista · Paraná, Entre Ríos · Todos los derechos reservados.</p>
+      <p class="footer-meta">Cuerpo, mente y alma en equilibrio.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== MODAL DE CONTACTO ========== -->
+<div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactTitle" hidden>
+  <div class="modal-backdrop js-close-contact"></div>
+  <div class="modal-card">
+    <button type="button" class="modal-close js-close-contact" aria-label="Cerrar">×</button>
+    <div class="modal-head">
+      <span class="modal-badge">Casa Amatista</span>
+      <h3 id="contactTitle">Escribinos</h3>
+      <p>Dejanos tu consulta y te respondemos a la brevedad. Si preferís, también podés escribirnos directo por WhatsApp.</p>
+    </div>
+    <form id="contactForm" class="modal-form" novalidate>
+      <div class="form-field">
+        <label for="ct-name">Nombre <span class="req">*</span></label>
+        <input type="text" id="ct-name" name="name" required autocomplete="name" placeholder="Tu nombre">
+      </div>
+      <div class="form-field">
+        <label for="ct-email">Email <span class="req">*</span></label>
+        <input type="email" id="ct-email" name="email" required autocomplete="email" placeholder="tu@email.com">
+      </div>
+      <div class="form-field">
+        <label for="ct-whatsapp">WhatsApp <span class="opt">(opcional)</span></label>
+        <input type="tel" id="ct-whatsapp" name="whatsapp" autocomplete="tel" placeholder="+54 9 343 ...">
+      </div>
+      <div class="form-field">
+        <label for="ct-reason">Tu consulta es sobre <span class="req">*</span></label>
+        <select id="ct-reason" name="reason" required>
+          <option value="reserva">Reservar un turno</option>
+          <option value="terapia">Una terapia</option>
+          <option value="practica">Yoga / meditación / prácticas</option>
+          <option value="alquiler">Alquiler de consultorio o salón</option>
+          <option value="general">Consulta general</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="ct-message">Mensaje <span class="req">*</span></label>
+        <textarea id="ct-message" name="message" required rows="4" placeholder="Contanos en qué podemos ayudarte"></textarea>
+      </div>
+      <div class="cf-turnstile" data-sitekey="REEMPLAZAR_CON_TU_SITE_KEY" data-theme="light" data-size="flexible"></div>
+      <button type="submit" class="btn btn-primary btn-block modal-submit">Enviar mensaje</button>
+      <p class="modal-privacy">Al enviar aceptás nuestra <a href="paginas/privacidad.html" target="_blank">política de privacidad</a>.</p>
+    </form>
+    <div class="modal-alt">
+      ¿Preferís algo más directo? <a href="https://wa.me/5493434732062?text=Hola%20Casa%20Amatista!%20Quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener">Escribinos por WhatsApp →</a>
+    </div>
+    <div class="modal-success" hidden>
+      <div class="modal-success-icon">✓</div>
+      <h3>¡Gracias!</h3>
+      <p>Recibimos tu mensaje y te vamos a responder a la brevedad al contacto que nos dejaste.</p>
+      <div class="form-note"><strong>💡 Revisá tu correo.</strong> Si nos escribiste por email, puede que nuestra respuesta llegue a <em>Spam</em> o <em>Promociones</em>. Marcala como “Principal” para no perderla.</div>
+      <button type="button" class="btn btn-outline js-close-contact" style="margin-top:18px">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MODAL DE TERAPIAS ========== -->
+<div class="modal modal-terapia" id="terapiaModal" role="dialog" aria-modal="true" aria-labelledby="terapiaTitle" hidden>
+  <div class="modal-backdrop js-close-terapia"></div>
+  <div class="modal-card modal-card-lg">
+    <button type="button" class="modal-close js-close-terapia" aria-label="Cerrar">×</button>
+    <div class="modal-head">
+      <span class="modal-badge" id="terapiaBadge">Casa Amatista</span>
+      <h3 id="terapiaTitle">Terapia</h3>
+    </div>
+    <div class="terapia-modal-body" id="terapiaBody"></div>
+    <div class="hero-ctas" style="justify-content:flex-start; margin-top:8px">
+      <button type="button" class="btn btn-primary" id="terapiaToContact">Quiero que me orienten</button>
+      <a class="btn btn-wa" href="https://wa.me/5493434732062?text=Hola%20Casa%20Amatista!%20Quisiera%20consultar%20sobre%20una%20terapia." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MODAL DE VISIÓN · MISIÓN · PROPÓSITO ========== -->
+<div class="modal modal-terapia" id="vmpModal" role="dialog" aria-modal="true" aria-labelledby="vmpTitle" hidden>
+  <div class="modal-backdrop js-close-vmp"></div>
+  <div class="modal-card modal-card-lg">
+    <button type="button" class="modal-close js-close-vmp" aria-label="Cerrar">×</button>
+    <div class="modal-head">
+      <span class="modal-badge" id="vmpBadge">Casa Amatista</span>
+      <h3 id="vmpTitle">Cuerpo</h3>
+    </div>
+    <div class="terapia-modal-body" id="vmpBody"></div>
+    <div class="hero-ctas" style="justify-content:flex-start; margin-top:8px">
+      <button type="button" class="btn btn-primary" id="vmpToTerapias">Ver nuestras terapias</button>
+      <a class="btn btn-wa" href="https://wa.me/5493434732062?text=Hola%20Casa%20Amatista!%20Quisiera%20consultar." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- Cookie banner -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>Usamos cookies para mejorar tu experiencia en el sitio. Podés leer más en nuestra <a href="paginas/cookies.html">Política de Cookies</a>.</p>
+  <div class="cookie-buttons">
+    <button class="btn btn-ghost btn-sm" id="cookieReject">Rechazar</button>
+    <button class="btn btn-primary btn-sm" id="cookieAccept">Aceptar</button>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+<script src="script.js?v=1"></script>
+</body>
+</html>
