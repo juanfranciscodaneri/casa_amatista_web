@@ -1,4 +1,4 @@
-# Casa Amatista · Sitio web
+﻿# Casa Amatista · Sitio web
 
 Sitio web institucional de **Casa Amatista**, centro de salud integrativa y holística en Paraná, Entre Ríos.
 Diseñado según el manual de identidad de la marca (paleta amatista, tipografías Cormorant Garamond + Lora + Inter).
@@ -60,7 +60,7 @@ El formulario del sitio funciona en **dos modos**:
 
 1. **Con backend (recomendado):** al desplegar en Cloudflare Pages, la función `functions/contact.js` recibe el envío y manda un email de aviso a `casaamatistaparana@gmail.com` y una confirmación a la persona.
    - Requiere una variable de entorno: **`RESEND_API_KEY`** (cuenta gratuita en [resend.com](https://resend.com)).
-   - Para que los emails salgan desde `@casaamatista.com.ar`, verificá el dominio en Resend y ajustá las direcciones `from` dentro de `functions/contact.js`. (Opcional pero recomendado.)
+   - Para que los emails salgan desde `@casaamatista.org`, verificá el dominio en Resend y ajustá las direcciones `from` dentro de `functions/contact.js`. (Opcional pero recomendado.)
    - Anti-spam opcional con Cloudflare Turnstile: si definís `TURNSTILE_SECRET_KEY` y agregás el widget al formulario, la verificación se activa sola.
 
 2. **Sin backend (fallback automático):** si la función no está disponible, el formulario abre **WhatsApp** con el mensaje ya redactado hacia el +54 9 343 473 2062. El sitio nunca queda “sin salida”.
@@ -74,7 +74,7 @@ El botón principal en toda la página es **WhatsApp**, que es el canal preferid
 1. Subí la carpeta `casa_amatista_web` a un repositorio, o arrastrala en el panel de Cloudflare Pages.
 2. Build command: *(ninguno)* · Output directory: `/` (la raíz del proyecto).
 3. En **Settings → Environment variables**, agregá `RESEND_API_KEY`.
-4. Configurá tu dominio (`casaamatista.com.ar` u otro).
+4. Configurá tu dominio (`casaamatista.org` u otro).
 
 También funciona en **Netlify**, **Vercel** o cualquier hosting estático (en ese caso, el formulario usará el fallback de WhatsApp salvo que adaptes la función a la plataforma).
 
@@ -82,7 +82,7 @@ También funciona en **Netlify**, **Vercel** o cualquier hosting estático (en e
 
 ## Pendientes / a verificar antes de publicar
 
-- [ ] **Dominio:** el sitio usa `casaamatista.com.ar` como placeholder en las URLs, el sitemap y los metadatos. Reemplazalo por el dominio real cuando lo tengas.
+- [ ] **Dominio:** el sitio usa `casaamatista.org` como placeholder en las URLs, el sitemap y los metadatos. Reemplazalo por el dominio real cuando lo tengas.
 - [ ] **Facebook:** el enlace apunta a `facebook.com/casaamatista.parana` (tentativo). Confirmá la URL real de la página.
 - [ ] **Instagram / Threads:** apuntan a `@casaamatista.parana`. Verificá que sean correctos.
 - [ ] **Email de envío:** si configurás Resend con dominio propio, actualizá las direcciones `from` en `functions/contact.js`.

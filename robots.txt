@@ -1,5 +1,5 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 Disallow: /paginas/
 
-Sitemap: https://casaamatista.com.ar/sitemap.xml
+Sitemap: https://casaamatista.org/sitemap.xml

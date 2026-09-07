@@ -1,4 +1,4 @@
-// Cloudflare Pages Function · Consultas generales de Casa Amatista
+﻿// Cloudflare Pages Function · Consultas generales de Casa Amatista
 // Envía: (1) notificación a casaamatistaparana@gmail.com con los datos y el motivo
 //        (2) confirmación cálida a quien consultó
 
@@ -77,7 +77,7 @@ export async function onRequestPost(context) {
     `;
 
     await sendEmail(env.RESEND_API_KEY, {
-      from: 'Casa Amatista · Web <notificaciones@casaamatista.com.ar>',
+      from: 'Casa Amatista · Web <notificaciones@casaamatista.org>',
       to: ['casaamatistaparana@gmail.com'],
       reply_to: data.email,
       subject: `🔔 Nueva consulta [${reasonLabel}]: ${data.name}`,
@@ -89,7 +89,7 @@ export async function onRequestPost(context) {
     const userEmailHtml = getContactConfirmationEmail(firstName, reasonLabel);
 
     await sendEmail(env.RESEND_API_KEY, {
-      from: 'Casa Amatista <hola@casaamatista.com.ar>',
+      from: 'Casa Amatista <hola@casaamatista.org>',
       to: [data.email],
       reply_to: 'casaamatistaparana@gmail.com',
       subject: `${firstName}, recibimos tu consulta 💜`,
@@ -165,7 +165,7 @@ function getContactConfirmationEmail(firstName, reasonLabel) {
 <div class="container">
   <div class="header">
     <div class="header-brand">Cuerpo · Mente · Alma</div>
-    <img src="https://casaamatista.com.ar/assets/logo-crema.png" alt="Casa Amatista" class="header-logo">
+    <img src="https://casaamatista.org/assets/logo-crema.png" alt="Casa Amatista" class="header-logo">
     <h1 class="header-title">Recibimos tu consulta, ${firstName}</h1>
   </div>
   <div class="content">
@@ -177,9 +177,9 @@ function getContactConfirmationEmail(firstName, reasonLabel) {
 
     <p>Alguien del equipo va a leer tu consulta y responderte a la brevedad, de forma personal, al mismo email desde el que nos escribiste (o por WhatsApp si nos dejaste tu número).</p>
 
-    <p>Mientras tanto, podés conocer más sobre nuestras terapias, prácticas y el espacio en <a href="https://casaamatista.com.ar" style="color: #6E5A78;">casaamatista.com.ar</a>.</p>
+    <p>Mientras tanto, podés conocer más sobre nuestras terapias, prácticas y el espacio en <a href="https://casaamatista.org" style="color: #6E5A78;">casaamatista.org</a>.</p>
 
-    <p style="font-size: 12px; color: #7C727C; padding: 12px 16px; background: rgba(110,90,120,0.06); border-left: 3px solid #B7A2AC; border-radius: 3px; margin: 24px 0;">💡 <strong>Para no perderte la respuesta:</strong> agregá <strong>hola@casaamatista.com.ar</strong> a tus contactos o revisá también Spam / Promociones.</p>
+    <p style="font-size: 12px; color: #7C727C; padding: 12px 16px; background: rgba(110,90,120,0.06); border-left: 3px solid #B7A2AC; border-radius: 3px; margin: 24px 0;">💡 <strong>Para no perderte la respuesta:</strong> agregá <strong>hola@casaamatista.org</strong> a tus contactos o revisá también Spam / Promociones.</p>
 
     <p class="signature">
       Con calma,<br>
@@ -189,7 +189,7 @@ function getContactConfirmationEmail(firstName, reasonLabel) {
   </div>
   <div class="footer">
     <p><strong style="color: #DED8E4;">Casa Amatista</strong> · Salud Integrativa y Holística</p>
-    <p><a href="https://casaamatista.com.ar">casaamatista.com.ar</a> · <a href="mailto:casaamatistaparana@gmail.com">casaamatistaparana@gmail.com</a></p>
+    <p><a href="https://casaamatista.org">casaamatista.org</a> · <a href="mailto:casaamatistaparana@gmail.com">casaamatistaparana@gmail.com</a></p>
   </div>
 </div>
 </body>
