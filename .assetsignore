@@ -3,3 +3,7 @@ wrangler.jsonc
 functions/
 README.md
 .assetsignore
+.git/
+.gitattributes
+.wrangler/
+node_modules/
