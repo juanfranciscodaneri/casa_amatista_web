@@ -1,5 +1,5 @@
 ﻿// Casa Amatista · Lógica del formulario de contacto
-// Envía: (1) notificación a casaamatistaparana@gmail.com con los datos y el motivo
+// Envía: (1) notificación interna con los datos y el motivo
 //        (2) confirmación cálida a quien consultó
 
 export async function handleContact(request, env) {
@@ -90,7 +90,7 @@ export async function handleContact(request, env) {
     await sendEmail(env.RESEND_API_KEY, {
       from: 'Casa Amatista <info@casaamatista.org>',
       to: [data.email],
-      reply_to: 'casaamatistaparana@gmail.com',
+      reply_to: 'info@casaamatista.org',
       subject: `${firstName}, recibimos tu consulta 💜`,
       html: userEmailHtml,
     });
@@ -188,7 +188,7 @@ function getContactConfirmationEmail(firstName, reasonLabel) {
   </div>
   <div class="footer">
     <p><strong style="color: #DED8E4;">Casa Amatista</strong> · Salud Integrativa y Holística</p>
-    <p><a href="https://casaamatista.org">casaamatista.org</a> · <a href="mailto:casaamatistaparana@gmail.com">casaamatistaparana@gmail.com</a></p>
+    <p><a href="https://casaamatista.org">casaamatista.org</a> · <a href="mailto:info@casaamatista.org">info@casaamatista.org</a></p>
   </div>
 </div>
 </body>

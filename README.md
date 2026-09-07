@@ -58,10 +58,10 @@ Inicio (hero) · Filosofía (Cuerpo/Mente/Alma) · Terapias (12) · Prácticas (
 
 El formulario del sitio funciona en **dos modos**:
 
-1. **Con backend (recomendado):** al desplegar en Cloudflare Pages, la función `functions/contact.js` recibe el envío y manda un email de aviso a `casaamatistaparana@gmail.com` y una confirmación a la persona.
-   - Requiere una variable de entorno: **`RESEND_API_KEY`** (cuenta gratuita en [resend.com](https://resend.com)).
-   - Para que los emails salgan desde `@casaamatista.org`, verificá el dominio en Resend y ajustá las direcciones `from` dentro de `functions/contact.js`. (Opcional pero recomendado.)
-   - Anti-spam opcional con Cloudflare Turnstile: si definís `TURNSTILE_SECRET_KEY` y agregás el widget al formulario, la verificación se activa sola.
+1. **Con backend (activo en producción):** el sitio corre como un Cloudflare Worker (`worker/index.js` + `wrangler.jsonc`), no como Pages clásico. La ruta `/api/contact` la maneja `worker/contact-handler.js`, que manda un email de aviso interno y una confirmación a la persona (remitentes `notificaciones@casaamatista.org` e `info@casaamatista.org`).
+   - Requiere las variables de entorno **`RESEND_API_KEY`** (cuenta en [resend.com](https://resend.com), dominio `casaamatista.org` verificado) y **`TURNSTILE_SECRET_KEY`** (widget de Cloudflare Turnstile, site key en `index.html`).
+   - Se configuran como *secrets* con `npx wrangler secret put NOMBRE` o desde el dashboard (Workers y Pages → Configuración → Variables y secretos).
+   - Deploy manual: `npx wrangler deploy` desde esta carpeta (el auto-deploy por push a GitHub no está andando en este proyecto; hay que redeployar a mano tras cada cambio).
 
 2. **Sin backend (fallback automático):** si la función no está disponible, el formulario abre **WhatsApp** con el mensaje ya redactado hacia el +54 9 343 473 2062. El sitio nunca queda “sin salida”.
 
@@ -69,14 +69,13 @@ El botón principal en toda la página es **WhatsApp**, que es el canal preferid
 
 ---
 
-## Deploy (Cloudflare Pages · recomendado)
+## Deploy (Cloudflare Workers)
 
-1. Subí la carpeta `casa_amatista_web` a un repositorio, o arrastrala en el panel de Cloudflare Pages.
-2. Build command: *(ninguno)* · Output directory: `/` (la raíz del proyecto).
-3. En **Settings → Environment variables**, agregá `RESEND_API_KEY`.
-4. Configurá tu dominio (`casaamatista.org` u otro).
+1. `npx wrangler login` (una sola vez, autentica con la cuenta de Cloudflare).
+2. `npx wrangler deploy` desde esta carpeta — sube los assets estáticos y el Worker (`worker/index.js`).
+3. Los dominios personalizados (`casaamatista.org` y `www.casaamatista.org`) y los *secrets* ya están declarados en `wrangler.jsonc` / configurados en la cuenta; no hace falta tocarlos en cada deploy.
 
-También funciona en **Netlify**, **Vercel** o cualquier hosting estático (en ese caso, el formulario usará el fallback de WhatsApp salvo que adaptes la función a la plataforma).
+Si se migra a otro hosting estático (Netlify, Vercel, etc.), el formulario cae automáticamente al fallback de WhatsApp salvo que se adapte `worker/contact-handler.js` a esa plataforma.
 
 ---
 
