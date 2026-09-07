@@ -1,4 +1,4 @@
-// Casa Amatista · Lógica del formulario de contacto
+﻿// Casa Amatista · Lógica del formulario de contacto
 // Envía: (1) notificación a casaamatistaparana@gmail.com con los datos y el motivo
 //        (2) confirmación cálida a quien consultó
 
@@ -88,7 +88,7 @@ export async function handleContact(request, env) {
     const userEmailHtml = getContactConfirmationEmail(firstName, reasonLabel);
 
     await sendEmail(env.RESEND_API_KEY, {
-      from: 'Casa Amatista <hola@casaamatista.org>',
+      from: 'Casa Amatista <info@casaamatista.org>',
       to: [data.email],
       reply_to: 'casaamatistaparana@gmail.com',
       subject: `${firstName}, recibimos tu consulta 💜`,
@@ -146,9 +146,9 @@ function getContactConfirmationEmail(firstName, reasonLabel) {
   body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #F6F4F1; color: #4A4048; }
   .container { max-width: 600px; margin: 0 auto; background: #FFFFFF; }
   .header { background: linear-gradient(180deg, #3B3047 0%, #2A2333 100%); padding: 40px 32px; text-align: center; }
-  .header-brand { color: #DED8E4; font-size: 12px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 8px; }
-  .header-logo { max-height: 46px; width: auto; margin-bottom: 14px; }
-  .header-title { color: #F6F4F1; font-size: 23px; font-weight: 600; margin: 0; font-family: Georgia, serif; }
+  .header-brand { color: #DED8E4; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-top: 10px; }
+  .header-logo { max-height: 46px; width: auto; margin-bottom: 4px; }
+  .header-title { color: #F6F4F1; font-size: 23px; font-weight: 600; margin: 18px 0 0; font-family: Georgia, serif; }
   .content { padding: 40px 32px; }
   .content p { font-size: 15px; line-height: 1.7; color: #4A4048; margin: 0 0 16px; }
   .content p strong { color: #3B3047; }
@@ -163,8 +163,8 @@ function getContactConfirmationEmail(firstName, reasonLabel) {
 <body>
 <div class="container">
   <div class="header">
-    <div class="header-brand">Cuerpo · Mente · Alma</div>
     <img src="https://casaamatista.org/assets/logo-crema.png" alt="Casa Amatista" class="header-logo">
+    <div class="header-brand">Cuerpo · Mente · Alma</div>
     <h1 class="header-title">Recibimos tu consulta, ${firstName}</h1>
   </div>
   <div class="content">
@@ -178,7 +178,7 @@ function getContactConfirmationEmail(firstName, reasonLabel) {
 
     <p>Mientras tanto, podés conocer más sobre nuestras terapias, prácticas y el espacio en <a href="https://casaamatista.org" style="color: #6E5A78;">casaamatista.org</a>.</p>
 
-    <p style="font-size: 12px; color: #7C727C; padding: 12px 16px; background: rgba(110,90,120,0.06); border-left: 3px solid #B7A2AC; border-radius: 3px; margin: 24px 0;">💡 <strong>Para no perderte la respuesta:</strong> agregá <strong>hola@casaamatista.org</strong> a tus contactos o revisá también Spam / Promociones.</p>
+    <p style="font-size: 12px; color: #7C727C; padding: 12px 16px; background: rgba(110,90,120,0.06); border-left: 3px solid #B7A2AC; border-radius: 3px; margin: 24px 0;">💡 <strong>Para no perderte la respuesta:</strong> agregá <strong>info@casaamatista.org</strong> a tus contactos o revisá también Spam / Promociones.</p>
 
     <p class="signature">
       Con calma,<br>
