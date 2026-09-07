@@ -202,7 +202,6 @@
       titulo: 'Psicología',
       concepto: 'La psicología es un espacio de escucha profesional donde podés poner en palabras lo que te pasa, comprender tus patrones de pensamiento y emoción, y encontrar herramientas concretas para atravesar los momentos difíciles. El proceso terapéutico se construye en un vínculo de confianza entre vos y tu terapeuta, respetando tus tiempos.',
       beneficios: [
-        'Reduce la ansiedad, el estrés y los síntomas depresivos.',
         'Mejora la gestión emocional y el autoconocimiento.',
         'Aporta herramientas para atravesar duelos, cambios y crisis vitales.',
         'Fortalece los vínculos personales, familiares y de pareja.',
@@ -213,9 +212,9 @@
     psicopedagogia: {
       badge: 'Mente',
       titulo: 'Psicopedagogía',
-      concepto: 'La psicopedagogía acompaña los procesos de aprendizaje a lo largo de toda la vida, identificando qué dificulta que alguien aprenda de la manera esperada y diseñando estrategias personalizadas para destrabarlo. Trabaja tanto con niños en edad escolar como con jóvenes y adultos.',
+      concepto: 'La psicopedagogía acompaña los procesos de aprendizaje a lo largo de toda la vida. Trabaja tanto con niños en edad escolar como con jóvenes y adultos.',
       beneficios: [
-        'Detecta y aborda dificultades de lectoescritura, cálculo y atención.',
+        'Detecta y aborda dificultades de aprendizaje.',
         'Mejora la organización del estudio y la autonomía escolar.',
         'Fortalece la autoestima vinculada al desempeño académico.',
         'Orienta a familias y docentes sobre cómo acompañar el proceso.'
@@ -225,14 +224,14 @@
     fonoaudiologia: {
       badge: 'Cuerpo',
       titulo: 'Fonoaudiología',
-      concepto: 'La fonoaudiología evalúa y trata los trastornos de la voz, el habla, el lenguaje, la audición y la deglución. A través de ejercicios y técnicas específicas, ayuda a comunicarse con mayor claridad y confianza en cualquier etapa de la vida.',
+      concepto: 'La fonoaudiología evalúa y trata los trastornos del habla, el lenguaje, la audición y la deglución. A través de ejercicios y técnicas específicas, ayuda a comunicarse con mayor claridad y confianza en cualquier etapa de la vida.',
       beneficios: [
-        'Mejora la articulación, fluidez y proyección de la voz.',
+        'Mejora la articulación, fluidez del lenguaje.',
         'Estimula el desarrollo del lenguaje en la infancia.',
         'Rehabilita la comunicación tras eventos neurológicos.',
         'Trabaja la deglución y funciones orofaciales.'
       ],
-      recomendada: 'Para niños con demoras en el habla o el lenguaje, adultos con problemas de voz (docentes, cantantes, oradores), y personas que necesiten rehabilitación de la comunicación por distintas causas.',
+      recomendada: 'Para niños con demoras en el habla o el lenguaje, y personas que necesiten rehabilitación de la comunicación por distintas causas.',
     },
     kinesiologia: {
       badge: 'Cuerpo',
@@ -249,7 +248,7 @@
     reflexologia: {
       badge: 'Cuerpo',
       titulo: 'Reflexología',
-      concepto: 'La reflexología es una técnica de estimulación manual sobre puntos reflejos ubicados principalmente en pies y manos, que, según esta tradición, se corresponden con distintos órganos y sistemas del cuerpo, promoviendo la relajación y el equilibrio general.',
+      concepto: 'La reflexología es una técnica de estimulación manual sobre puntos reflejos ubicados principalmente en pies y manos, que se corresponden con distintos órganos y sistemas del cuerpo, promoviendo la relajación y el equilibrio general.',
       beneficios: [
         'Induce un estado profundo de relajación y descanso.',
         'Ayuda a disminuir la tensión muscular y el estrés.',
@@ -325,7 +324,6 @@
       beneficios: [
         'Induce un estado de relajación profunda.',
         'Ayuda a disminuir el estrés y la fatiga.',
-        'Acompaña procesos de duelo, cambio o enfermedad.',
         'Favorece la sensación de equilibrio y bienestar general.'
       ],
       recomendada: 'Para quienes buscan una práctica de relajación y acompañamiento energético complementario, en cualquier etapa de la vida, sin contraindicaciones físicas de por medio.',
