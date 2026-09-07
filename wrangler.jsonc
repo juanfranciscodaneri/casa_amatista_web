@@ -6,5 +6,9 @@
   "assets": {
     "directory": "./",
     "binding": "ASSETS"
-  }
+  },
+  "routes": [
+    { "pattern": "casaamatista.org", "custom_domain": true },
+    { "pattern": "www.casaamatista.org", "custom_domain": true }
+  ]
 }
