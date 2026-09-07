@@ -316,7 +316,8 @@ ul { list-style: none; }
 .espacio-intro { display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; align-items: center; margin-bottom: 60px; }
 .espacio-intro .lead { color: var(--lavanda); }
 .espacio-feature { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-photo); }
-.espacio-feature img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.espacio-feature img { width: 100%; aspect-ratio: 4/5; object-fit: cover; transition: transform .8s ease; }
+.espacio-feature:hover img { transform: scale(1.06); }
 .espacio-feature figcaption {
   position: absolute; left: 0; bottom: 0; right: 0; padding: 22px 24px;
   background: linear-gradient(transparent, rgba(42,35,51,.9));
