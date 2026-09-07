@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "casa-amatista-web",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-09-06",
+  "assets": {
+    "directory": "./",
+    "binding": "ASSETS"
+  }
+}

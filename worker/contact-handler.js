@@ -1,10 +1,9 @@
-﻿// Cloudflare Pages Function · Consultas generales de Casa Amatista
+// Casa Amatista · Lógica del formulario de contacto
 // Envía: (1) notificación a casaamatistaparana@gmail.com con los datos y el motivo
 //        (2) confirmación cálida a quien consultó
 
-export async function onRequestPost(context) {
+export async function handleContact(request, env) {
   try {
-    const { request, env } = context;
     const data = await request.json();
 
     if (!data.name || !data.email || !data.message || !data.reason) {
