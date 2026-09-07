@@ -72,7 +72,7 @@ El botón principal en toda la página es **WhatsApp**, que es el canal preferid
 ## Deploy (Cloudflare Workers)
 
 1. `npx wrangler login` (una sola vez, autentica con la cuenta de Cloudflare).
-2. `npx wrangler deploy` desde esta carpeta — sube los assets estáticos y el Worker (`worker/index.js`).
+2. `npx wrangler deploy` desde esta carpeta: sube los assets estáticos y el Worker (`worker/index.js`).
 3. Los dominios personalizados (`casaamatista.org` y `www.casaamatista.org`) y los *secrets* ya están declarados en `wrangler.jsonc` / configurados en la cuenta; no hace falta tocarlos en cada deploy.
 
 Si se migra a otro hosting estático (Netlify, Vercel, etc.), el formulario cae automáticamente al fallback de WhatsApp salvo que se adapte `worker/contact-handler.js` a esa plataforma.

@@ -119,7 +119,7 @@
     cuerpo: {
       badge: 'Nuestra Misión',
       titulo: 'Cuerpo',
-      concepto: 'El cuerpo es el lugar donde nuestra misión se hace concreta, día a día: cuidar y sostener el bienestar físico de cada persona que llega a Casa Amatista. Es a través del cuerpo —el movimiento, el tacto, la respiración— que la misión deja de ser una idea y se transforma en un cambio real y palpable en cada sesión.',
+      concepto: 'El cuerpo es el lugar donde nuestra misión se hace concreta, día a día: cuidar y sostener el bienestar físico de cada persona que llega a Casa Amatista. Es a través del cuerpo (el movimiento, el tacto, la respiración) que la misión deja de ser una idea y se transforma en un cambio real y palpable en cada sesión.',
       vivimos: 'La vivimos a través de la Kinesiología, la Reflexología, los Masajes y las prácticas de movimiento consciente como el Yoga, el Tai Chi y la gimnasia para embarazadas: todas disciplinas que trabajan directamente sobre el cuerpo para aliviar, fortalecer y devolverle su capacidad de habitar el presente.',
       sinergia: 'El cuerpo no actúa solo: necesita de la claridad de la Mente para saber hacia dónde dirigir ese cuidado, y del sentido que aporta el Alma para que ese trabajo físico tenga un propósito que lo trascienda. Cuando cuerpo, mente y alma se sostienen mutuamente, la misión de acompañar se cumple de manera integral.'
     },
@@ -249,7 +249,7 @@
     reflexologia: {
       badge: 'Cuerpo',
       titulo: 'Reflexología',
-      concepto: 'La reflexología es una técnica de estimulación manual sobre puntos reflejos ubicados principalmente en pies y manos, que —según esta tradición— se corresponden con distintos órganos y sistemas del cuerpo, promoviendo la relajación y el equilibrio general.',
+      concepto: 'La reflexología es una técnica de estimulación manual sobre puntos reflejos ubicados principalmente en pies y manos, que, según esta tradición, se corresponden con distintos órganos y sistemas del cuerpo, promoviendo la relajación y el equilibrio general.',
       beneficios: [
         'Induce un estado profundo de relajación y descanso.',
         'Ayuda a disminuir la tensión muscular y el estrés.',
