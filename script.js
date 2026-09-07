@@ -102,6 +102,14 @@
     if (!modal) return;
     modal.hidden = true;
     document.body.style.overflow = '';
+    if (form) { form.hidden = false; form.reset(); }
+    var alt = modal.querySelector('.modal-alt');
+    if (alt) alt.hidden = false;
+    var ok = modal.querySelector('.modal-success');
+    if (ok) ok.hidden = true;
+    if (typeof turnstile !== 'undefined' && turnstile.reset) {
+      try { turnstile.reset(); } catch (e) {}
+    }
   }
 
   document.querySelectorAll('.js-open-contact').forEach(function (btn) {
