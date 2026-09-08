@@ -12,7 +12,6 @@
   --violeta-night:#2A2333;  /* fondo oscuro base */
   --lavanda:      #C7BFD1;  /* Lavanda Gris */
   --lavanda-soft: #DED8E4;
-  --violeta-mist: #F3EFF6;  /* Violeta muy suave, para tarjetas */
   --crema:        #F6F4F1;  /* Blanco Roto */
   --crema-warm:   #FBFAF7;
   --piedra:       #E6DFD6;  /* Beige Piedra */
@@ -254,20 +253,19 @@ ul { list-style: none; }
 }
 .eje h3 { font-family: var(--serif); font-size: 30px; font-weight: 600; color: var(--violeta-deep); margin-bottom: 10px; }
 .eje p { font-size: 15.5px; line-height: 1.7; color: var(--texto-soft); max-width: 32ch; margin: 0 auto; }
-.eje-line { width: 30px; height: 1px; background: var(--nude); margin: 16px auto 0; margin-top: auto; padding-top: 16px; }
+.eje-line { width: 30px; height: 1px; flex-shrink: 0; background: var(--nude); margin: auto auto 0; }
 
 /* ========== TERAPIAS ========== */
 .terapias-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
 }
 .terapia {
-  position: relative; background: var(--violeta-mist); padding: 32px 30px;
+  position: relative; background: var(--crema-warm); padding: 32px 30px;
   border: none; border-radius: 16px; box-shadow: 0 8px 22px rgba(42,35,51,.07);
   transition: transform .3s ease, box-shadow .3s ease;
   display: flex; flex-direction: column; gap: 8px; text-align: left;
   font-family: inherit; cursor: pointer; width: 100%;
 }
-.terapia:nth-child(even) { background: var(--lavanda-soft); }
 .terapia:hover, .terapia:focus-visible {
   transform: scale(1.045); z-index: 2;
   box-shadow: 0 18px 40px rgba(42,35,51,.16);
