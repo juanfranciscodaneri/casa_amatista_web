@@ -1,15 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO principal -->
-<title>Casa Amatista · Centro de Salud Integrativa y Holística en Paraná</title>
-<meta name="description" content="Casa Amatista es un espacio de salud integrativa y holística en Paraná, Entre Ríos. Terapias, yoga, meditación, tai chi y alquiler de consultorios y salones. Cuerpo · Mente · Alma.">
+<title>Casa Amatista · Centro de Salud Integrativa en Paraná</title>
+<meta name="description" content="Centro de salud integrativa y holística en Paraná, Entre Ríos: psicología, kinesiología, reiki, masajes, yoga, meditación y tai chi. Alquiler de consultorios y salones.">
 <meta name="author" content="Casa Amatista">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#6E5A78">
+<meta name="geo.region" content="AR-E">
+<meta name="geo.placename" content="Paraná, Entre Ríos">
+<meta name="geo.position" content="-31.720971;-60.527630">
+<meta name="ICBM" content="-31.720971, -60.527630">
 <link rel="canonical" href="https://casaamatista.org/">
+<link rel="alternate" hreflang="es-AR" href="https://casaamatista.org/">
+<link rel="alternate" hreflang="x-default" href="https://casaamatista.org/">
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="Casa Amatista">
@@ -17,50 +24,129 @@
 <meta property="og:description" content="Un espacio para reconectar cuerpo, mente y alma. Terapias, prácticas y salones en Parque Urquiza, Paraná.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://casaamatista.org/">
-<meta property="og:image" content="https://casaamatista.org/assets/salon-yoga.jpg">
+<meta property="og:image" content="https://casaamatista.org/assets/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hall de entrada de Casa Amatista, centro de salud integrativa en Paraná">
 <meta property="og:locale" content="es_AR">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Casa Amatista · Salud Integrativa y Holística en Paraná">
 <meta name="twitter:description" content="Un espacio para reconectar cuerpo, mente y alma. Paraná, Entre Ríos.">
-<meta name="twitter:image" content="https://casaamatista.org/assets/salon-yoga.jpg">
+<meta name="twitter:image" content="https://casaamatista.org/assets/og-image.jpg">
+<meta name="twitter:image:alt" content="Hall de entrada de Casa Amatista, centro de salud integrativa en Paraná">
 
 <link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preload" as="image" href="assets/salon-yoga.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=6">
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 <!-- Datos estructurados -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
-  "name": "Casa Amatista",
-  "description": "Centro de salud integrativa y holística: terapias, prácticas (yoga, meditación, tai chi) y alquiler de consultorios y salones en Paraná, Entre Ríos.",
-  "url": "https://casaamatista.org/",
-  "logo": "https://casaamatista.org/assets/logo-violeta.png",
-  "image": "https://casaamatista.org/assets/salon-yoga.jpg",
-  "slogan": "Cuerpo · Mente · Alma",
-  "telephone": "+5493434732062",
-  "email": "info@casaamatista.org",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "De La Torre y Vera 1064, Parque Urquiza",
-    "addressLocality": "Paraná",
-    "addressRegion": "Entre Ríos",
-    "addressCountry": "AR"
-  },
-  "areaServed": "Paraná, Entre Ríos, Argentina",
-  "sameAs": [
-    "https://www.instagram.com/casaamatista.parana",
-    "https://www.facebook.com/casaamatista.parana",
-    "https://www.threads.net/@casaamatista.parana"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://casaamatista.org/#website",
+      "url": "https://casaamatista.org/",
+      "name": "Casa Amatista",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://casaamatista.org/#negocio" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casaamatista.org/#webpage",
+      "url": "https://casaamatista.org/",
+      "name": "Casa Amatista · Centro de Salud Integrativa en Paraná",
+      "isPartOf": { "@id": "https://casaamatista.org/#website" },
+      "about": { "@id": "https://casaamatista.org/#negocio" },
+      "primaryImageOfPage": { "@type": "ImageObject", "url": "https://casaamatista.org/assets/og-image.jpg", "width": 1200, "height": 630 },
+      "inLanguage": "es-AR"
+    },
+    {
+      "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+      "@id": "https://casaamatista.org/#negocio",
+      "name": "Casa Amatista",
+      "alternateName": "Casa Amatista Cuerpo | Mente | Alma",
+      "description": "Centro de salud integrativa y holística: terapias, prácticas (yoga, meditación, tai chi) y alquiler de consultorios y salones en Paraná, Entre Ríos.",
+      "url": "https://casaamatista.org/",
+      "logo": { "@type": "ImageObject", "url": "https://casaamatista.org/assets/logo-violeta.png", "width": 1161, "height": 377 },
+      "image": [
+        "https://casaamatista.org/assets/og-image.jpg",
+        "https://casaamatista.org/assets/salon-yoga.jpg",
+        "https://casaamatista.org/assets/patio-zen-1.jpg"
+      ],
+      "slogan": "Cuerpo · Mente · Alma",
+      "telephone": "+5493434732062",
+      "email": "info@casaamatista.org",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "De La Torre y Vera 1064, Parque Urquiza",
+        "addressLocality": "Paraná",
+        "addressRegion": "Entre Ríos",
+        "postalCode": "3100",
+        "addressCountry": "AR"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -31.720971, "longitude": -60.52763 },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Casa+Amatista+De+La+Torre+y+Vera+1064+Paran%C3%A1",
+      "areaServed": { "@type": "City", "name": "Paraná", "containedInPlace": { "@type": "AdministrativeArea", "name": "Entre Ríos" } },
+      "knowsAbout": ["Salud integrativa", "Psicología", "Psicopedagogía", "Fonoaudiología", "Kinesiología", "Reflexología", "Coaching ontológico", "Mindfulness", "Constelaciones familiares", "Tarot perceptivo", "Reiki", "Masajes", "Yoga", "Meditación", "Tai Chi Chuan"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Terapias, prácticas y alquiler de espacios",
+        "itemListElement": [
+          { "@type": "OfferCatalog", "name": "Terapias", "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psicología" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psicopedagogía" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fonoaudiología" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kinesiología" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reflexología" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Coaching Ontológico" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mindfulness" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Constelaciones Familiares" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tarot Perceptivo" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bioexistencia Consciente" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reiki" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Masajes" } }
+          ] },
+          { "@type": "OfferCatalog", "name": "Prácticas", "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yoga" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Meditación y Mindfulness" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tai Chi Chuan" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gimnasia para embarazadas" } }
+          ] },
+          { "@type": "OfferCatalog", "name": "Alquiler de espacios", "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alquiler de consultorios por módulos de 5 horas" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alquiler de salones para clases y talleres" } }
+          ] }
+        ]
+      },
+      "sameAs": [
+        "https://www.instagram.com/casaamatista.parana",
+        "https://www.facebook.com/casaamatista.parana",
+        "https://www.threads.net/@casaamatista.parana"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://casaamatista.org/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Cómo saco un turno?", "acceptedAnswer": { "@type": "Answer", "text": "La forma más rápida es por WhatsApp. Contanos qué terapia o práctica te interesa y coordinamos día y horario con el profesional. También podés escribirnos desde el formulario de contacto." } },
+        { "@type": "Question", "name": "¿Necesito experiencia previa para las prácticas de yoga o meditación?", "acceptedAnswer": { "@type": "Answer", "text": "Para nada. Nuestras clases están abiertas a todos los niveles y trabajamos en grupos reducidos para acompañarte a tu ritmo. Solo vení con ropa cómoda y ganas de estar presente." } },
+        { "@type": "Question", "name": "¿Las terapias reemplazan un tratamiento médico?", "acceptedAnswer": { "@type": "Answer", "text": "No. Las terapias y prácticas de Casa Amatista son complementarias y están orientadas al bienestar integral. No sustituyen el diagnóstico, tratamiento o indicación de profesionales de la salud. Ante cualquier condición médica, consultá siempre con tu profesional de confianza." } },
+        { "@type": "Question", "name": "Soy profesional, ¿cómo alquilo un consultorio o salón?", "acceptedAnswer": { "@type": "Answer", "text": "Los consultorios y oficinas se alquilan por módulos de 5 horas, y los salones según tu propuesta de clase, taller o formación. Escribinos y coordinamos una visita para que conozcas el espacio y veamos la disponibilidad." } },
+        { "@type": "Question", "name": "¿Dónde están y cómo llego?", "acceptedAnswer": { "@type": "Answer", "text": "Estamos en De La Torre y Vera 1064, en pleno Parque Urquiza, Paraná (Entre Ríos). Podés ubicarnos en el mapa de esta página. La zona es tranquila y de fácil acceso." } }
+      ]
+    }
   ]
 }
-</script>
-</head>
+</script></head>
 <body>
 
 <!-- ========== NAVBAR ========== -->
@@ -86,10 +172,11 @@
 
 <!-- ========== HERO ========== -->
 <section class="hero" id="hero">
-  <div class="hero-bg"><img src="assets/salon-yoga.jpg" alt="Sala de prácticas de Casa Amatista con esteras de yoga en tonos amatista"></div>
+  <div class="hero-bg"><img src="assets/salon-yoga.jpg" width="1333" height="2000" fetchpriority="high" decoding="async" alt="Sala de prácticas de Casa Amatista con esteras de yoga en tonos amatista"></div>
   <div class="hero-overlay"></div>
   <canvas id="petals" aria-hidden="true"></canvas>
   <div class="hero-inner">
+    <h1 class="sr-only">Casa Amatista: centro de salud integrativa y holística en Paraná, Entre Ríos</h1>
     <img class="hero-logo" src="assets/logo-crema.png" alt="Casa Amatista">
     <div class="hero-tagline"><span>Cuerpo</span><i class="dot"></i><span>Mente</span><i class="dot"></i><span>Alma</span></div>
     <p class="hero-sub">Un centro de salud integrativa y holística que te acompaña a volver a habitarte con calma. Ubicada en el corazón del Parque Urquiza de Paraná, Entre Ríos, Argentina.</p>
@@ -225,7 +312,7 @@
     </div>
     <div class="practicas-grid reveal">
       <article class="practica">
-        <img src="assets/salon-yoga-2.jpg" alt="Sala de yoga de Casa Amatista">
+        <img src="assets/salon-yoga-2.jpg" width="1067" height="1600" loading="lazy" decoding="async" alt="Sala de yoga de Casa Amatista">
         <span class="practica-tag">Cuerpo · Mente</span>
         <div class="practica-body">
           <h3>Yoga</h3>
@@ -233,15 +320,15 @@
         </div>
       </article>
       <article class="practica">
-        <img src="assets/buda.jpg" alt="Rincón de meditación con figura de Buda">
+        <img src="assets/buda.jpg" width="1000" height="1500" loading="lazy" decoding="async" alt="Rincón de meditación con figura de Buda">
         <span class="practica-tag">Mente · Alma</span>
         <div class="practica-body">
           <h3>Meditación &amp; Mindfulness</h3>
           <p>Encuentros guiados para cultivar la atención plena y volver al presente.</p>
         </div>
       </article>
-      <article class="practica">
-        <img src="assets/patio-zen-2.jpg" alt="Patio Zen de Casa Amatista">
+      <article class="practica practica-taichi">
+        <img src="assets/patio-zen-2.jpg" width="1000" height="1500" loading="lazy" decoding="async" alt="Buda junto a una palmera en el Patio Zen de Casa Amatista">
         <span class="practica-tag">Cuerpo · Energía</span>
         <div class="practica-body">
           <h3>Tai Chi Chuan</h3>
@@ -249,7 +336,7 @@
         </div>
       </article>
       <article class="practica">
-        <img src="assets/salon-yoga.jpg" alt="Salón amplio de Casa Amatista para prácticas">
+        <img src="assets/salon-yoga.jpg" width="1333" height="2000" loading="lazy" decoding="async" alt="Salón amplio de Casa Amatista para prácticas">
         <span class="practica-tag">Cuidado</span>
         <div class="practica-body">
           <h3>Gimnasia para embarazadas</h3>
@@ -276,33 +363,33 @@
         </div>
       </div>
       <figure class="espacio-feature reveal">
-        <img src="assets/diosa.jpg" alt="Rincón espiritual con figura en actitud de oración y velas">
+        <img src="assets/diosa.jpg" width="933" height="1400" loading="lazy" decoding="async" alt="Rincón espiritual con figura en actitud de oración y velas">
         <figcaption>Rincones para respirar, dentro de la casa.</figcaption>
       </figure>
     </div>
     <div class="gallery reveal">
       <figure class="wide">
-        <img src="assets/hall-buda.jpg" alt="Hall de entrada de Casa Amatista con escalera y consola con figura de Buda">
+        <img src="assets/hall-buda.jpg" width="1800" height="1200" loading="lazy" decoding="async" alt="Hall de entrada de Casa Amatista con escalera y consola con figura de Buda">
         <figcaption>Hall de entrada</figcaption>
       </figure>
       <figure class="tall">
-        <img src="assets/patio-zen-1.jpg" alt="Patio Zen con palmera y camino de piedras">
+        <img src="assets/patio-zen-1.jpg" width="1067" height="1600" loading="lazy" decoding="async" alt="Patio Zen con palmera y camino de piedras">
         <figcaption>Patio Zen</figcaption>
       </figure>
       <figure>
-        <img src="assets/consultorio-a1.jpg" alt="Consultorio de Casa Amatista">
+        <img src="assets/consultorio-a1.jpg" width="1125" height="1500" loading="lazy" decoding="async" alt="Consultorio de Casa Amatista">
         <figcaption>Consultorio</figcaption>
       </figure>
       <figure>
-        <img src="assets/consultorio-b1.jpg" alt="Oficina de Casa Amatista">
+        <img src="assets/consultorio-b1.jpg" width="1000" height="1500" loading="lazy" decoding="async" alt="Oficina de Casa Amatista">
         <figcaption>Oficina profesional</figcaption>
       </figure>
       <figure>
-        <img src="assets/rincon-infantil.jpg" alt="Rincón infantil de Casa Amatista con teatro de marionetas y mesa de juegos">
+        <img src="assets/rincon-infantil.jpg" width="1800" height="1200" loading="lazy" decoding="async" alt="Rincón infantil de Casa Amatista con teatro de marionetas y mesa de juegos">
         <figcaption>Rincón infantil</figcaption>
       </figure>
       <figure>
-        <img src="assets/consultorio-juegos.jpg" alt="Consultorio equipado con juegos didácticos para psicopedagogía">
+        <img src="assets/consultorio-juegos.jpg" width="1800" height="1200" loading="lazy" decoding="async" alt="Consultorio equipado con juegos didácticos para psicopedagogía">
         <figcaption>Espacio de aprendizaje</figcaption>
       </figure>
     </div>
@@ -320,7 +407,7 @@
     <div class="alquiler-grid reveal">
       <article class="oferta">
         <div class="oferta-photo">
-          <img src="assets/consultorio-a2.jpg" alt="Consultorio para alquilar en Casa Amatista">
+          <img src="assets/consultorio-a2.jpg" width="1125" height="1500" loading="lazy" decoding="async" alt="Consultorio para alquilar en Casa Amatista">
           <span>Consultorios &amp; Oficinas</span>
         </div>
         <div class="oferta-body">
@@ -339,7 +426,7 @@
       </article>
       <article class="oferta">
         <div class="oferta-photo">
-          <img src="assets/salon-yoga-2.jpg" alt="Salón para clases y talleres en Casa Amatista">
+          <img src="assets/salon-yoga-2.jpg" width="1067" height="1600" loading="lazy" decoding="async" alt="Salón para clases y talleres en Casa Amatista">
           <span>Salones</span>
         </div>
         <div class="oferta-body">

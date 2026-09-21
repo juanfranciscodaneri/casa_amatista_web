@@ -7,3 +7,4 @@ README.md
 .gitattributes
 .wrangler/
 node_modules/
+assets/DSC_*.JPG
