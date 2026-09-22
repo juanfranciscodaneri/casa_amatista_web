@@ -44,7 +44,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=6">
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 <!-- Datos estructurados -->
 <script type="application/ld+json">
@@ -94,6 +93,12 @@
         "addressCountry": "AR"
       },
       "geo": { "@type": "GeoCoordinates", "latitude": -31.720971, "longitude": -60.52763 },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:00",
+        "closes": "22:00"
+      },
       "hasMap": "https://www.google.com/maps/search/?api=1&query=Casa+Amatista+De+La+Torre+y+Vera+1064+Paran%C3%A1",
       "areaServed": { "@type": "City", "name": "Paraná", "containedInPlace": { "@type": "AdministrativeArea", "name": "Entre Ríos" } },
       "knowsAbout": ["Salud integrativa", "Psicología", "Psicopedagogía", "Fonoaudiología", "Kinesiología", "Reflexología", "Coaching ontológico", "Mindfulness", "Constelaciones familiares", "Tarot perceptivo", "Reiki", "Masajes", "Yoga", "Meditación", "Tai Chi Chuan"],
@@ -696,6 +701,6 @@
 
 <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
 
-<script src="script.js?v=3"></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>

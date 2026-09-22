@@ -90,8 +90,21 @@
   var form = document.getElementById('contactForm');
   var reasonSel = document.getElementById('ct-reason');
 
+  // Turnstile se carga recién al abrir el formulario (no penaliza la carga inicial).
+  var turnstileLoaded = false;
+  function loadTurnstile() {
+    if (turnstileLoaded) return;
+    turnstileLoaded = true;
+    var s = document.createElement('script');
+    s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+    s.async = true;
+    s.defer = true;
+    document.head.appendChild(s);
+  }
+
   function openModal(reason) {
     if (!modal) return;
+    loadTurnstile();
     if (reason && reasonSel) reasonSel.value = reason;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
